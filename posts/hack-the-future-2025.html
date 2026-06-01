@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hack The Future 2025 — Aquatopia hackathon in Antwerp">
+  <title>Hack The Future 2025 | Vladyslav Savchuk</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html">Vladyslav Savchuk</a>
+      <nav aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../linkedin.html">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article">
+    <header>
+      <h1>Hack The Future 2025 — Aquatopia</h1>
+      <p class="meta">Antwerp · #Hackathon #HackTheFuture #HTF25 #Development</p>
+    </header>
+
+    <figure>
+      <img src="../images/hack-the-future-opening.png" alt="Opening ceremony at Hack The Future with Welkom on screen and a large student crowd" width="800" height="1200">
+      <p class="figure-caption">Opening night — more than a thousand students in one hall.</p>
+    </figure>
+
+    <p>
+      I had an amazing time at <strong>Hack The Future 2025</strong> in Antwerp this week, diving into the
+      <strong>Aquatopia</strong>-themed hackathon together with more than <strong>1,000 students</strong> from different
+      IT and creative backgrounds. The scale alone sets the tone: this is not a classroom exercise with forgiving
+      deadlines — it is production pressure, sponsor energy, and teams that have to ship before the clock runs out.
+    </p>
+
+    <figure>
+      <img src="../images/hack-the-future-badge.png" alt="Hack The Future 2025 Aquatopia event badge and lanyard" width="800" height="1200">
+      <p class="figure-caption">Badge for the Aquatopia edition — Hack The Future 2025.</p>
+    </figure>
+
+    <h2>The challenge</h2>
+    <p>
+      My challenge was all about <strong>rescuing a broken backend server</strong> and getting it fully operational again
+      so it could communicate with <strong>OpenAI</strong> and <strong>identify fish species from photos</strong>. On paper
+      that sounds playful; in practice it was a chain of failures waiting to happen: dead services, misconfigured endpoints,
+      API keys, image pipelines, and model responses that only work when every layer is healthy.
+    </p>
+    <p>
+      It was a great mix of <strong>debugging</strong>, <strong>backend engineering</strong>, and <strong>applied AI</strong>.
+      We traced logs, restored connectivity, and tested uploads until the stack could classify an image end to end. Under
+      time pressure you feel how much security and reliability matter — not as slide bullets, but as “can we trust this
+      call right now?”
+    </p>
+
+    <h2>Reliability under pressure</h2>
+    <p>
+      A very real reminder: <strong>observability</strong>, error handling, and sane defaults decide whether a demo survives
+      a jury walk-by. When OpenAI sits in the middle of your flow, you also inherit rate limits, latency, and data-handling
+      questions — especially with user-submitted photos. Aquatopia made that concrete: one broken container or wrong env var
+      and your “fish ID” story stops cold.
+    </p>
+
+    <figure>
+      <img src="../images/hack-the-future-aquatopia.png" alt="Aquatopia themed Hack The Future submarine stage installation in Antwerp" width="800" height="1200">
+      <p class="figure-caption">The Aquatopia set — themed stages and serious engineering in the same building.</p>
+    </figure>
+
+    <h2>Beyond the code</h2>
+    <p>
+      Beyond the challenge itself, the <strong>atmosphere</strong> at the event was fantastic — loud, focused, and genuinely
+      collaborative. You hear other teams argue about architecture in one row and UX in the next. Huge thanks to all
+      <strong>organisers and companies</strong> that showed up with challenges, mentors, and hardware that made HTF25 feel
+      like a professional field trip, not a school trip.
+    </p>
+    <p>
+      I left Antwerp tired but energised: proof that I enjoy the messy middle between “it is broken” and “it works,” and that
+      hackathons are still one of the fastest ways to learn what holds up when reality does not wait for your README.
+    </p>
+
+    <p><a href="../index.html">← Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Vladyslav Savchuk</p>
+  </footer>
+</body>
+</html>

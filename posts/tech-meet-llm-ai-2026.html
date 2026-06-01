@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tech&amp;Meet on LLMs — efficiency, visual context, and open vs closed AI">
+  <title>Tech&amp;Meet — LLMs &amp; AI | Vladyslav Savchuk</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html">Vladyslav Savchuk</a>
+      <nav aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../linkedin.html">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article">
+    <header>
+      <h1>Tech&amp;Meet — where LLMs are heading</h1>
+      <p class="meta">Howest · Tech&amp;Meet · #Howest #TechAndMeet #AI #LLM #DeepSeek #OpenSourceAI</p>
+    </header>
+
+    <figure>
+      <img src="../images/tech-meet-llm-deepseek.png" alt="Tech and Meet slide comparing DeepSeek as open-source answer to OpenAI" width="800" height="1200">
+      <p class="figure-caption">Open vs closed ecosystems — and who actually pays for compute.</p>
+    </figure>
+
+    <p>
+      Last week I attended <strong>Tech&amp;Meet at Howest</strong>, and two things really shifted how I think about where
+      large language models are heading. The session was not a product demo; it was a tour of constraints, architectures,
+      and trade-offs that matter if you build or defend systems that will rely on AI in the next few years.
+    </p>
+
+    <h2>Do more with less</h2>
+    <p>
+      First: <strong>“do more with less”</strong> is no longer a slogan — it is an engineering advantage. Seeing how modern
+      models can stay competitive despite weaker GPU access — by optimising training and inference and activating only the
+      parts of a model that are needed — made it clear that <strong>efficiency can rival raw compute</strong>. That resonates
+      in cybersecurity too: the defender with better architecture and selective depth often beats the side that only bought
+      more metal.
+    </p>
+    <p>
+      MoE-style thinking (sparse activation, routing experts only when required) is not academic trivia. It is how you keep
+      latency and cost under control when you cannot assume unlimited NVIDIA budgets — whether you are a startup, a university,
+      or a national programme weighing export controls on chips.
+    </p>
+
+    <figure>
+      <img src="../images/tech-meet-llm-context.png" alt="Tech and Meet presentation on representing context as images instead of plain text" width="800" height="1200">
+      <p class="figure-caption">Context as image: a slide worth more than a wall of tokens.</p>
+    </figure>
+
+    <h2>Context as image, not only text</h2>
+    <p>
+      Second: the idea of <strong>representing context as an image instead of plain text</strong> felt genuinely disruptive.
+      If models can consume richer, more compressed context directly — rather than constantly converting
+      image → text → processing — that could change how we build assistants for complex environments:
+      <strong>security operations centres</strong>, incident timelines, layered network diagrams, and dashboards where the
+      layout itself carries meaning.
+    </p>
+    <p>
+      We still default to dumping logs into strings. A visual-native pipeline might preserve structure that gets lost the
+      moment everything is flattened to prose. I am sceptical until I test it, but the direction is worth watching.
+    </p>
+
+    <h2>Open vs closed — and the real bill</h2>
+    <p>
+      The <strong>DeepSeek</strong> framing on screen — China’s open-source answer to closed frontier labs — fed the debate
+      I keep having as a cybersecurity student. <strong>Open vs closed</strong> is not only philosophy. You might gain
+      transparency and self-hosting options with open weights, but <strong>hosting and compute are still the price tag</strong>,
+      paid in money, hardware, electricity, or governance. Someone runs the cluster; someone patches the model; someone
+      answers when data leaves your jurisdiction.
+    </p>
+    <p>
+      Closed APIs outsource that bill to a vendor contract. Open weights push it back to your ops team. Neither removes risk —
+      they redistribute it. For defence and critical infrastructure, that redistribution is the entire conversation.
+    </p>
+
+    <p>
+      I left Tech&amp;Meet with more questions than answers, which is the best outcome for this kind of evening: less hype,
+      more engineering and economics. I will follow how Howest keeps surfacing topics that sit at the edge of computer science
+      and real-world security work.
+    </p>
+
+    <p><a href="../index.html">← Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Vladyslav Savchuk</p>
+  </footer>
+</body>
+</html>

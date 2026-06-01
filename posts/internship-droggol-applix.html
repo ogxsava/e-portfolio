@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Final-year internship at Droggol (Applix) — functional analysis and AI semantic search across Odoo repositories">
+  <title>Internship — Droggol (Applix) | Vladyslav Savchuk</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html">Vladyslav Savchuk</a>
+      <nav aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../linkedin.html">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article">
+    <header>
+      <h1>Internship — Droggol (Applix)</h1>
+      <p class="meta">Functional Analyst · Odoo · AI</p>
+    </header>
+
+    <figure>
+      <img src="../images/internship-portrait.png" alt="Vladyslav Savchuk during internship at Droggol Applix" width="800" height="1200">
+    </figure>
+
+    <p>
+      During my <strong>final-year internship</strong> at <strong>Droggol (Applix)</strong>, a Belgian Odoo integrator,
+      I worked as a <strong>Functional Analyst</strong> intern — combining client-facing functional analysis with
+      hands-on AI development. My role involved supporting project managers, contributing to Odoo implementations
+      for clients, and designing functional specifications for ERP systems.
+    </p>
+
+    <figure>
+      <img src="../images/internship-odoo-testing.png" alt="Odoo quotations view on testing database during internship work" width="800" height="1200">
+      <p class="figure-caption">Day-to-day work in Odoo — functional flows on neutralised test databases before go-live.</p>
+    </figure>
+
+    <h2>Functional analysis in practice</h2>
+    <p>
+      ERP work is rarely “only code.” You sit between business language and system behaviour: workshops, gap analysis,
+      write-ups that developers can implement, and validation on staging environments. At Applix that meant staying
+      close to <strong>Odoo</strong> modules clients actually use — sales, helpdesk, inventory — and making sure specs
+      are testable, not wish lists. Supporting PMs taught me how delivery timelines, scope, and client expectations
+      shape every technical decision.
+    </p>
+
+    <figure>
+      <img src="../images/internship-github-projects.png" alt="GitHub Droggol Active Projects board during internship" width="800" height="1200">
+      <p class="figure-caption">Engineering coordination — tickets and repos that fed the search project.</p>
+    </figure>
+
+    <h2>AI project — multi-repository semantic search</h2>
+    <p>
+      As my main technical project, I designed and built an <strong>AI-powered internal search engine</strong> that
+      indexes <strong>GitHub tickets from 90+ Odoo repositories</strong> used by Applix. The goal was simple to state and
+      hard to ship: consultants and developers should find prior art in seconds, not by guessing which repo held a
+      similar bug or feature request.
+    </p>
+
+    <p>The application allows developers and consultants to:</p>
+    <ul>
+      <li><strong>Semantically search</strong> across all repositories or within a specific one, using natural language queries</li>
+      <li><strong>Browse tickets per repository</strong> and toggle between an AI-generated LLM summary and the original GitHub issue body</li>
+      <li><strong>Access direct links</strong> to the original GitHub issue and any linked Odoo helpdesk ticket</li>
+    </ul>
+
+    <p>
+      Under the hood, the system uses <strong>vector indexing</strong> (embeddings via <strong>Groq</strong>) to represent
+      ticket content, enabling fast, context-aware retrieval — effectively a <strong>multi-repository RAG</strong>
+      (Retrieval-Augmented Generation) application built for internal engineering use. Ingestion, chunking, and keeping
+      indices in sync with live repos were as important as the chat-style query UI: stale search is worse than no search.
+    </p>
+
+    <h2>What I took away</h2>
+    <p>
+      The internship bridged two worlds I want to keep: <strong>clarity for humans</strong> (functional specs, client
+      communication) and <strong>systems that scale knowledge</strong> (semantic search over years of tickets). It also
+      reinforced security and hygiene — internal tools still touch production-adjacent data, API keys, and GitHub access
+      boundaries. I am grateful for a team that treated an intern as someone who could own a real internal product, not
+      only shadow meetings.
+    </p>
+
+    <p><a href="../index.html">← Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Vladyslav Savchuk</p>
+  </footer>
+</body>
+</html>

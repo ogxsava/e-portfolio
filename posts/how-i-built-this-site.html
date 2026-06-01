@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How this blog was built — static HTML and hosting">
+  <title>How I built this website | Vladyslav Savchuk</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html">Vladyslav Savchuk</a>
+      <nav aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../linkedin.html">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article">
+    <header>
+      <h1>How I built this website</h1>
+      <p class="meta">Stack &amp; workflow</p>
+    </header>
+
+    <p>
+      I wanted a lightweight blog without spending weeks on infrastructure. Here is what runs this site today.
+    </p>
+
+    <h2>Summary</h2>
+    <ul>
+      <li><strong>Type:</strong> Static HTML and CSS (no CMS)</li>
+      <li><strong>Hosting:</strong> <a href="https://ogxsava.github.io/e-portfolio/" rel="noopener">GitHub Pages</a></li>
+      <li><strong>Repository:</strong> <a href="https://github.com/ogxsava/e-portfolio" rel="noopener">github.com/ogxsava/e-portfolio</a></li>
+      <li><strong>New post:</strong> ~15–30 minutes (new HTML file, images, one line on the home page)</li>
+    </ul>
+
+    <h2>Why static files</h2>
+    <p>
+      Plain files are easy to version in Git, fast to load, and painless to back up. I can open any post in an editor,
+      drop photos in <code>images/</code>, and publish with a git push. No database, no plugin updates.
+    </p>
+
+    <h2>Structure</h2>
+    <pre style="background: var(--surface); padding: 1rem; border-radius: 8px; overflow-x: auto; font-size: 0.875rem; border: 1px solid var(--border);"><code>├── index.html       # Home — list of posts
+├── about.html
+├── css/style.css
+├── posts/           # One file per article
+└── images/</code></pre>
+
+    <h2>Publishing</h2>
+    <ol>
+      <li>Add a new <code>posts/my-article.html</code>.</li>
+      <li>Link it from <code>index.html</code>.</li>
+      <li>Push to GitHub — Pages rebuilds automatically.</li>
+    </ol>
+
+    <p><a href="../index.html">← Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Vladyslav Savchuk · <a href="https://www.linkedin.com/in/vlad-savchuk-b56768224/" rel="noopener">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
